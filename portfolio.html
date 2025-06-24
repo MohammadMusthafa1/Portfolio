@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Mohammad Musthafa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+  <div class="hero-header" id="home">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-m"></i>
+          <div class="logo-text">Mohammad Musthafa</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span><span></span><span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="hero-pic">
+          <img src="MusthafaM.jpg" alt="Profile Picture"/>
+        </div>
+        <div class="hero-text">
+          <h5>Hi, I'm <span class="input">Full Stack Developer</span></h5>
+          <h1>Mohammad Musthafa</h1>
+          <p>I'm a Computer Science graduate skilled in Full Stack Java Development, building efficient and user-friendly web applications.</p>
+          <div class="btn-group">
+            <a href="resume.pdf" class="btn active" download>Download CV</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+          <div class="social">
+            <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Your projects will go here.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">Java</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">MySQL</div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Blog content will go here.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 +91-9876543210</p>
+    <p>📧 musthafa@example.com</p>
+  </section>
+
+  <!-- Typed.js Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    const togglebtn = document.querySelector(".togglebtn");
+    const nav = document.querySelector(".navlinks");
+
+    togglebtn.addEventListener("click", function () {
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+    });
+
+    new Typed(".input", {
+      strings: ["Full Stack Java Developer", "Frontend Developer", "Web Developer"],
+      typeSpeed: 60,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
+</body>
+</html>
